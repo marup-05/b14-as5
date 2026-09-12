@@ -26,7 +26,7 @@ const Navbar = () => {
       </ul>
 
       <div className="flex items-center gap-2">
-        <button className="btn btn-soft rounded-full">Sign In</button>
+        <button>Sign In</button>
         <button className="btn btn-secondary rounded-full">Sign Up</button>
       </div>
     </nav>
