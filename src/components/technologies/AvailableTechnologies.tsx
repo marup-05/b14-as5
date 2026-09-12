@@ -1,16 +1,21 @@
 import React from "react";
+import type { Dispatch, SetStateAction } from "react";
 import type { Itechnology } from "../../types/technology";
 import { FaRegStar } from "react-icons/fa";
 
 interface AvailableTechnologiesProps {
   technologies: Itechnology[];
   selectedTechnologies: Itechnology[];
+
+  setSelectedTechnologies: Dispatch<SetStateAction<Itechnology[]>>;
+
   onAdd: (technology: Itechnology) => void;
 }
 
 const AvailableTechnologies = ({
   technologies,
   selectedTechnologies,
+  setSelectedTechnologies,
   onAdd,
 }: AvailableTechnologiesProps) => {
   console.log(technologies, "technology from available technology");
@@ -53,7 +58,14 @@ const AvailableTechnologies = ({
 
               <div className="card-actions">
                 <button
-                  onClick={() => onAdd(technology)}
+                  onClick={() => {
+                    setSelectedTechnologies([
+                      ...selectedTechnologies,
+                      technology,
+                    ]);
+
+                    onAdd(technology);
+                  }}
                   disabled={isAdded}
                   className={`btn w-full ${
                     isAdded

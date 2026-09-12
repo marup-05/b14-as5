@@ -7,7 +7,6 @@ interface YourStackProps {
   onRemove: (id: string) => void;
   onRemoveAll: () => void;
 }
-
 const YourStack = ({
   selectedTechnologies,
   onRemove,
@@ -23,8 +22,6 @@ const YourStack = ({
             ? "No technologies selected yet."
             : `${selectedTechnologies.length} Technology Selected`}
         </p>
-
-        {/* Conditional Rendering */}
         {selectedTechnologies.length === 0 ? (
           <div className="border border-dashed border-gray-200 rounded-lg p-8 text-center mt-3">
             <p className="text-sm text-gray-400">Your stack is empty.</p>
@@ -45,7 +42,6 @@ const YourStack = ({
 
                   <div>
                     <h3 className="font-medium">{technology.name}</h3>
-
                     <p className="text-xs text-gray-400">
                       {technology.category}
                     </p>

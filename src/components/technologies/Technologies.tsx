@@ -14,7 +14,6 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
   const [selectedTechnologies, setSelectedTechnologies] = useState<
     Itechnology[]
   >([]);
-
   console.log(technologies);
 
   return (
@@ -34,6 +33,7 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
           <AvailableTechnologies
             technologies={technologies}
             selectedTechnologies={selectedTechnologies}
+            setSelectedTechnologies={setSelectedTechnologies}
             onAdd={(technology) => {
               setSelectedTechnologies([...selectedTechnologies, technology]);
 
