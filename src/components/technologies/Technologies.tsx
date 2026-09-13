@@ -14,26 +14,26 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
   const [selectedTechnologies, setSelectedTechnologies] = useState<
     Itechnology[]
   >([]);
+
   console.log(technologies);
 
   return (
     <div>
-      <div className="mb-5 pl-10">
+      <div className="mb-5 px-4 md:pl-10">
         <h1 className="text-2xl md:text-3xl font-bold">
           Explore the <span className="text-pink-600">Technologies</span>
         </h1>
 
-        <p className="mt-2 text-gray-500 text-1xl">
+        <p className="mt-2 text-1xl text-gray-500">
           Pick one technology per category to build your ideal stack.
         </p>
       </div>
 
-      <div className="grid grid-cols-4 gap-5">
-        <div className="col-span-3">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+        <div className="col-span-1 md:col-span-3">
           <AvailableTechnologies
             technologies={technologies}
             selectedTechnologies={selectedTechnologies}
-            setSelectedTechnologies={setSelectedTechnologies}
             onAdd={(technology) => {
               setSelectedTechnologies([...selectedTechnologies, technology]);
 

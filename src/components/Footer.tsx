@@ -4,11 +4,11 @@ import logo from "../assets/logo-text.png";
 const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-200 mt-10">
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div className="md:col-span-2">
             <div className="mb-3">
-              <img src={logo} alt="" className="w-28" />
+              <img src={logo} alt="DevStack" className="w-28" />
             </div>
 
             <p className="text-xs text-gray-400 leading-5 max-w-md">
@@ -18,7 +18,7 @@ const Footer = () => {
 
             <div className="flex gap-5 mt-4 text-xs text-gray-500">
               <a href="" className="hover:text-purple-600">
-                Github
+                GitHub
               </a>
 
               <a href="" className="hover:text-purple-600">
