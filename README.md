@@ -1,32 +1,24 @@
-# React + TypeScript + Vite
+* My project name is DevStack.
+* DevStack is a modern technology stack builder that helps new developer to learn and explores new technology to therie own personalized technology stack.
+* Technologies used:
+1) React.
+2) Typescript.
+3) Tailwind CSS.
+4) DaisyUI.
+5) React icons.
+6) React toastify.
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+* Features:
+1) Explore Technologies.
+2) Build your stack.
+3) Easy stack management.
 
-Currently, two official plugins are available:
+-----------------------------------------------------------------------------------------
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+i) JSX means Javascript XML. It's used for return html from JS component.
+ii) Props are passed into a component from the outside like js argument. state works like variable.
+iii) The useState() hook do to store data that changes overtime. if we use it, when we changes some things in our projects it's re-render it. 
+iv) useEffect() use for handle side effect to our projects. it's used json data loaded cause the data flow are simple and easy.
+v) In react every item in a .map() list need a unique key prop so that react can track, identify indivisual items in virtual DOM.
+vi) Conditional rendering is a situation that we are do something or not. in the empty stack message if we select any technology it's added on yourstack otherwise the stack is empty. 
